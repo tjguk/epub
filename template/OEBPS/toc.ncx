@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<!--
+Hierarchical table of contents for this epub.
+Values for docTitle, docAuthor and meta name="dtb:uid" should match
+their counterparts in content.opf.
+meta name="dtb:depth" is equal to the depth of the navMap element.
+navPoint elements can be nested to create a hierarchical table of contents.
+navPoint's content element points to a content document listed in the manifest
+and can include a fragment.
+-->
+
+  <head>
+    <meta name="dtb:uid" content=""/> <!-- as in .opf -->
+    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:totalPageCount" content="0"/> <!-- must be 0 -->
+    <meta name="dtb:maxPageNumber" content="0"/> <!-- must be 0 -->
+  </head>
+
+  <docTitle>
+    <text></text>
+  </docTitle>
+
+  <docAuthor>
+    <text></text>
+  </docAuthor>
+
+  <navMap>
+    <!--
+    <navPoint class="chapter" id="navpoint-1" playOrder="1">
+      <navLabel><text></text></navLabel>
+      <content src="" />
+    </navPoint>
+    -->
+  </navMap>
+</ncx>

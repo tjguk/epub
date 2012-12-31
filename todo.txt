@@ -1,0 +1,3 @@
+* Allow user-specified nav points to override automatic heading detection
+
+* Add Front page / generated TOC before main document

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="">
+
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <!--
+        title, language & identifier are mandatory
+        identifier should indicate a URL/ISBN etc.
+          Its id attribute should be equal to the unique-identifier attribute on the package tag
+        language should match RFC3066 or its successors
+        -->
+        <dc:title></dc:title>
+        <dc:creator opf:file-as="" opf:role="aut"></dc:creator>
+        <dc:language>en</dc:language>
+        <!-- The id attribute of the dc:identifier should match the unique-identifier attribute
+        of the metadata element which contains it. These should be different from any
+        other id in this document, specifically including manifest items -->
+        <dc:identifier opf:scheme="URI" id=""></dc:identifier>
+    </metadata>
+
+    <manifest>
+        <!--
+        List all the files in the package. Each file is represented by an item element
+        which has attributes id, href, media-type. All XHTML, stylesheets, images, etc.
+        should be listed here, including the toc.ncx file. The content.opf file itself
+        should not, nor should the container.xml nor the mimetype files.
+        -->
+        <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    </manifest>
+
+    <spine toc="ncx">
+        <!--
+        All the XHTML content documents in linear reading order. Also, any content
+        document reachable through linking or the table of contents must be listed.
+        The toc attribute must contain the id of the ncx file listed in the manifest
+        element. Each itemref element's idref is set to the id of its respective
+        content document from the manifest.
+        -->
+    </spine>
+
+    <guide>
+        <!--
+        An optional element for identifying fundamental structural components of the
+        book. Each reference element has attributes: type, title, href. Files referenced
+        in href must be present in the manifrst and are allowed to have an element
+        identifer (ie a fragment).
+
+        Type are listed in: http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.6
+        and include: cover, title-page, toc, index, text etc.
+        -->
+    </guide>
+
+</package>
