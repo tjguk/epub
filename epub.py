@@ -284,7 +284,7 @@ class EPub(object):
 
     def _set_headings(self, title, tree):
         """Replace certain paragraphs by header levels. Typically, this
-        will be used to replace "<p>Chapter x>/p>" by "<h2>Chapter x</h2>.
+        will be used to replace "<p>Chapter x</p>" by "<h2>Chapter x</h2>.
         If it is needed to replace only a part of the paragraph then a P
         tag can be used as the replacement.
         """
